@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { Dashboard } from './dashboard/dashboard';
 import { Manageusers } from './manageusers/manageusers';
+import { Userprofile } from './userprofile/userprofile';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Manageusers } from './manageusers/manageusers';
     Signin,
     Signup,
     Dashboard,
-    Manageusers
+    Manageusers,
+    Userprofile
   ],
   imports: [
     BrowserModule,
