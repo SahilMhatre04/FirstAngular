@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="container my-5 shadow-sm ">
+    <div class="row d-flex align-items-center ">
+        <div class="col-md">
+            <app-signin *ngIf="a"></app-signin>
+            <app-signup *ngIf="!a"></app-signup>
+        </div>
+        <div *ngIf="a" style="height: 85vh;" class="col-md bg-success bg-gradient">
+            <button (click)="a=!a" class="btn btn-success shadow-sm">signup</button>
+        </div>
+        <div *ngIf="!a" style="height: 85vh;" class="col-md bg-success bg-gradient">
+            <button (click)="a=!a" class="btn btn-success shadow-sm">signin</button>
+        </div>
+    </div>
+</div>
